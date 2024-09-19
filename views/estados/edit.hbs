@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h2>Editar Estado de Préstamo</h2>
+    <form>
+        <div class="form-group">
+            <label for="estado_prestamo">Estado del Préstamo</label>
+            <input type="text" class="form-control" id="estado_prestamo" value="{{estado_prestamo}}">
+        </div>
+        <div class="form-group">
+            <label for="tipo_prestamo">Tipo de Préstamo</label>
+            <input type="text" class="form-control" id="tipo_prestamo" value="{{tipo_prestamo}}">
+        </div>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success">Guardar Cambios</button>
+            <button type="button" class="btn btn-danger" onclick="window.location.href='/estados/list'">Cancelar</button>
+        </div>
+    </form>
+</div>

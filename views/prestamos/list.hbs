@@ -1,0 +1,79 @@
+<div class="container mt-4">
+    <h2>Listado de Préstamos</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>ID Préstamo</th>
+                <th>ID Usuario</th>
+                <th>Fecha de Préstamo</th>
+                <th>Fecha de Devolución</th>
+                <th>Estado</th>
+                <th>Multa</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Datos de prueba -->
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>2024-01-10</td>
+                <td>2024-02-10</td>
+                <td>Activo</td>
+                <td>0.00</td>
+                <td>
+                    <button class="btn btn-warning" onclick="window.location.href='/prestamos/edit/1'">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>2024-02-05</td>
+                <td>2024-03-05</td>
+                <td>Completado</td>
+                <td>5.00</td>
+                <td>
+                    <button class="btn btn-warning" onclick="window.location.href='/prestamos/edit/2'">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>103</td>
+                <td>2024-03-01</td>
+                <td>2024-03-31</td>
+                <td>Retrasado</td>
+                <td>10.00</td>
+                <td>
+                    <button class="btn btn-warning" onclick="window.location.href='/prestamos/edit/3'">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>104</td>
+                <td>2024-04-10</td>
+                <td>2024-05-10</td>
+                <td>En Proceso</td>
+                <td>0.00</td>
+                <td>
+                    <button class="btn btn-warning" onclick="window.location.href='/prestamos/edit/4'">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>105</td>
+                <td>2024-05-01</td>
+                <td>2024-06-01</td>
+                <td>Cancelado</td>
+                <td>0.00</td>
+                <td>
+                    <button class="btn btn-warning" onclick="window.location.href='/prestamos/edit/5'">Actualizar</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

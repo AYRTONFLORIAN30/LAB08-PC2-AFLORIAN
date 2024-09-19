@@ -1,0 +1,26 @@
+<div class="container mt-4">
+    <h2>Agregar Préstamo</h2>
+    <form>
+        <div class="form-group">
+            <label for="id_usuario">ID Usuario</label>
+            <input type="text" class="form-control" id="id_usuario" placeholder="ID Usuario">
+        </div>
+        <div class="form-group">
+            <label for="fecha_prestamo">Fecha de Préstamo</label>
+            <input type="date" class="form-control" id="fecha_prestamo">
+        </div>
+        <div class="form-group">
+            <label for="fecha_devolucion">Fecha de Devolución</label>
+            <input type="date" class="form-control" id="fecha_devolucion">
+        </div>
+        <div class="form-group">
+            <label for="estado">Estado</label>
+            <input type="text" class="form-control" id="estado" placeholder="Estado">
+        </div>
+        <div class="mt-4">
+            <button type="submit" class="btn btn-success">Guardar</button>
+            <button type="button" class="btn btn-danger" onclick="window.location.href='/prestamos/list'">Cancelar</button>
+        </div>
+    </form>
+</div>
+
