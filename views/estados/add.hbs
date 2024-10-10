@@ -1,18 +1,20 @@
-<div class="container mt-4">
-    <h2>Agregar Estado de Préstamo</h2>
-    <form>
+<div class="container mt-4" style="max-width: 600px;">
+    <h2 class="text-center">Añadir Estado de Préstamo</h2>
+    <form action="/estados/add" method="POST">
+        <div class="form-group">
+            <label for="id_prestamo">ID Préstamo</label>
+            <input type="text" class="form-control" id="id_prestamo" name="id_prestamo" required>
+        </div>
         <div class="form-group">
             <label for="estado_prestamo">Estado del Préstamo</label>
-            <input type="text" class="form-control" id="estado_prestamo" placeholder="Estado del Préstamo">
+            <input type="text" class="form-control" id="estado_prestamo" name="estado_prestamo" required>
         </div>
         <div class="form-group">
             <label for="tipo_prestamo">Tipo de Préstamo</label>
-            <input type="text" class="form-control" id="tipo_prestamo" placeholder="Tipo de Préstamo">
+            <input type="text" class="form-control" id="tipo_prestamo" name="tipo_prestamo" required>
         </div>
-        <div class="mt-4">
-            <button type="submit" class="btn btn-success">Guardar</button>
-            <button type="button" class="btn btn-danger" onclick="window.location.href='/estados/list'">Cancelar</button>
-        </div>
+        <button type="submit" class="btn btn-primary">Guardar</button>
     </form>
+    </p>
 </div>
 

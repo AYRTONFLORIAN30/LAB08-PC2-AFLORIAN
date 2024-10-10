@@ -1,17 +1,18 @@
-<div class="container mt-4">
-    <h2>Editar Estado de Préstamo</h2>
-    <form>
+<div class="container mt-4" style="max-width: 600px;">
+    <h2 class="text-center">Editar Estado de Préstamo</h2>
+    <form action="/estados/edit/{{estado._id}}" method="POST">
+        <div class="form-group">
+            <label for="id_prestamo">ID Préstamo</label>
+            <input type="text" class="form-control" id="id_prestamo" name="id_prestamo" value="{{estado.id_prestamo}}" readonly>
+        </div>
         <div class="form-group">
             <label for="estado_prestamo">Estado del Préstamo</label>
-            <input type="text" class="form-control" id="estado_prestamo" value="{{estado_prestamo}}">
+            <input type="text" class="form-control" id="estado_prestamo" name="estado_prestamo" value="{{estado.estado_prestamo}}" required>
         </div>
         <div class="form-group">
             <label for="tipo_prestamo">Tipo de Préstamo</label>
-            <input type="text" class="form-control" id="tipo_prestamo" value="{{tipo_prestamo}}">
+            <input type="text" class="form-control" id="tipo_prestamo" name="tipo_prestamo" value="{{estado.tipo_prestamo}}" required>
         </div>
-        <div class="mt-4">
-            <button type="submit" class="btn btn-success">Guardar Cambios</button>
-            <button type="button" class="btn btn-danger" onclick="window.location.href='/estados/list'">Cancelar</button>
-        </div>
+        <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>
 </div>
